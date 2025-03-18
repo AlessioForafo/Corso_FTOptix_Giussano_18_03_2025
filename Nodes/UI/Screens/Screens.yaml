@@ -22,13 +22,13 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 20.0
+      Value: 960.0
     - Name: TopMargin
       Id: g=8d8efd869fa1454cd7897401c8b31163
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 18.0
+      Value: 230.0
     - Name: Width
       Id: g=dfb7b8148b06a43a5869724a9baf344f
       Type: BaseVariableType
@@ -150,46 +150,38 @@ Children:
       DataType: Size
       ModellingRule: Optional
       Value: 20.0
-  - Name: Button2
-    Id: g=1dc953a0f6b2077233831fd678c3c970
-    Type: Button
+  - Name: LED1
+    Id: g=3cc43426e05f0b59c627855551e797ff
+    Type: Led
     Children:
-    - Name: Text
-      Id: g=ce3f9be5b103aa20139d9f111d26be80
+    - Name: Active
+      Id: g=9b55bd0fe9e2fe43512fa0f6296fc0f9
       Type: BaseDataVariableType
-      DataType: LocalizedText
-      ModellingRule: Optional
-      Value: {"LocaleId":"en-US","Text":"Button2"}
-    - Name: LeftMargin
-      Id: g=4f9c72755b18c505bd0337087910b428
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 26.0
-    - Name: TopMargin
-      Id: g=ea8e88ab078cc7f2a819a721b1ee7831
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 155.0
+      DataType: Boolean
     - Name: Width
-      Id: g=1bf17ba5c52bfc9b5c37937710a79f82
+      Id: g=0e92ea04e7f8251a4c4e7a0063f9ba55
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 144.0
+      Value: 50.0
     - Name: Height
-      Id: g=952c27c9fa07a5f181e5d75a07bc2506
+      Id: g=af3f0df5a809a78bd68056667acc3988
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 75.0
-    - Name: BackgroundColor
-      Id: g=8b80bcb996e46c506ef0bb1cbf10f25f
-      Type: BaseDataVariableType
-      DataType: Color
+      Value: 50.0
+    - Name: TopMargin
+      Id: g=290bceb612e96e94a47d9bde06a717b6
+      Type: BaseVariableType
+      DataType: Size
       ModellingRule: Optional
-      Value: "#f8e71c"
+      Value: 270.0
+    - Name: LeftMargin
+      Id: g=cd271b1c89d6defb3d85d6ed14b7f48b
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 40.0
 - Name: Screen2
   Id: g=f67e1be66feb5c4240476fbbee22e5ef
   Supertype: Screen
