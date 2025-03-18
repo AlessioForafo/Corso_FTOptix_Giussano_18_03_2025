@@ -1,0 +1,46 @@
+Name: NetLogic
+Id: g=991998d786a3909874d531db1833fc59
+Type: NetLogicCategoryFolder
+Children:
+- Name: MioPrimoDesignTimeScript
+  Id: g=51c220cb08e61561c9cb9aaf726823d5
+  Type: NetLogic
+  Children:
+  - Name: BehaviourStartPriority
+    Id: g=ad746b1bb96d9eaeba143b731ac5746f
+    Type: BehaviourStartPriorityVariableType
+    DataType: Byte
+    Value: 180
+  - Class: Method
+    Name: MioPrimoMetodo
+    Id: g=1c8c4836025f17ee0030842eea185982
+  - Class: Method
+    Name: MioSecondoMetodo
+    Id: g=56c93aa4e968f964f624e858915bdec4
+  - Name: NumeroTagDaCreare
+    Id: g=6fd73ecafe0e94c682a45e7cb5fb1061
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 100
+  - Class: Method
+    Name: MioTerzoMetodo
+    Id: g=11fcf40ea2a62437a9498e4ce9cdc130
+  - Class: Method
+    Name: CancellaTag
+    Id: g=517d11d37d8c73becab7243eeccf9d5a
+- Name: RuntimeNetLogic1
+  Id: g=8b29d65a816a8189c6a455731dde3a36
+  Type: NetLogic
+  Children:
+  - Class: Method
+    Name: mioLog
+    Id: g=086c528cc54716a2ccbf6fa27986e1bf
+    Children:
+    - Name: ns=0;InputArguments
+      Id: g=7614bef1bc18adcd38315fde2202198d
+      Type: BaseVariableType
+      DataType: Argument
+      ReferenceType: HasProperty
+      ValueRank: OneDimension
+      ArrayDimensions: [0]
+      Value: [{"TypeId":{"Id":296},"Body":{"Name":"testoLog","DataType":{"Id":12},"ValueRank":-1,"ArrayDimensions":[],"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}}]

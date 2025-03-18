@@ -1,0 +1,78 @@
+Name: Corso_FTOptix_Giussano_18_03_2025
+Id: g=60ad6370ef21737a113c59c97f0b2671
+Type: ProjectFolder
+Children:
+- Name: Localization
+  Id: g=3935c2c0211709921fdf8c2940350b25
+  Type: PropertyGroup
+  Children:
+  - Name: Locales
+    Id: g=447a9ad6eec9a933f130744b69dcd6c5
+    Type: BaseDataVariableType
+    DataType: LocaleId
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+    Value: ["en-US"]
+  - Name: LocaleFallbackList
+    Id: g=926297a62a32780e746cdf34f6656db1
+    Type: BaseDataVariableType
+    DataType: LocaleId
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+    Value: ["en-US"]
+- Name: Authentication
+  Id: g=62edc721cf57d05977171ba643879812
+  Type: PropertyGroup
+  Children:
+  - Name: DefaultUserFolder
+    Id: g=48bd79267424a72aa8a9128ef49cf2f9
+    Type: NodePointer
+    DataType: NodeId
+    Value: "/Objects/Corso_FTOptix_Giussano_18_03_2025/Security/Users"
+    Children:
+    - Name: Kind
+      Id: g=9f56957c38adcb6e1606fcc45f2dade6
+      Type: PropertyType
+      DataType: NodeId
+      Value: "/Types/ObjectTypes/BaseObjectType/FolderType"
+- Name: PasswordPolicy
+  Id: g=b8098290425bec03981d06229b413816
+  Type: PasswordPolicy
+  Children:
+  - Name: MaximumPasswordAge
+    Id: g=2fa4aab62bdae5e4c1429b2c8f49d75c
+    Type: BaseDataVariableType
+    DataType: UInt16
+  - Name: EnforcePasswordHistory
+    Id: g=db5c081f9e6927b99cd6b60712495924
+    Type: BaseDataVariableType
+    DataType: Byte
+    Value: 1
+  - Name: MinimumPasswordAge
+    Id: g=889b8eea8f40772156230c47bb8b3dd6
+    Type: BaseDataVariableType
+    DataType: UInt16
+  - Name: MinimumPasswordLength
+    Id: g=5a4d195b3085d788a3ea35cf82bcef28
+    Type: BaseDataVariableType
+    DataType: Byte
+    Value: 8
+- Name: AlarmConfiguration
+  Id: g=4014528b8e7620a944b7e9bfb4911894
+  Type: PropertyGroup
+- File: UI/UI.yaml
+- File: Model/Model.yaml
+- File: Converters/Converters.yaml
+- File: Alarms/Alarms.yaml
+- File: Recipes/Recipes.yaml
+- File: Loggers/Loggers.yaml
+- File: DataStores/DataStores.yaml
+- File: Reports/Reports.yaml
+- File: 'OPC-UA/OPC-UA.yaml'
+- File: MQTT/MQTT.yaml
+- File: CommDrivers/CommDrivers.yaml
+- File: NetLogic/NetLogic.yaml
+- File: Security/Security.yaml
+- File: System/System.yaml
+- File: Translations/Translations.yaml
+- File: Retentivity/Retentivity.yaml

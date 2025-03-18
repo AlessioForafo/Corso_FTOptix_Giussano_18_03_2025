@@ -1,0 +1,299 @@
+Name: Screens
+Id: g=e65849ff3b7324d3a1b808378629e8b1
+Type: ScreensCategoryFolder
+Children:
+- Name: Screen1
+  Id: g=fef83849cdde22730cc45c4971353782
+  Supertype: Screen
+  ReferenceType: HasComponent
+  Children:
+  - Name: Button1
+    Id: g=25ba9a529821fc9207883af5399f17fc
+    Type: Button
+    Children:
+    - Name: Text
+      Id: g=6de6c4ef07c5e5ffa0b2f8f6797dbf80
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      ModellingRule: Optional
+      Value: {"LocaleId":"en-US","Text":"Button1"}
+    - Name: LeftMargin
+      Id: g=f0342ad9f4d0a683a42d08a1cdf89cc9
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 20.0
+    - Name: TopMargin
+      Id: g=8d8efd869fa1454cd7897401c8b31163
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 18.0
+    - Name: Width
+      Id: g=dfb7b8148b06a43a5869724a9baf344f
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 140.0
+    - Name: Height
+      Id: g=5ce4fa156bbf596627d9d354ffe8ab00
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 82.0
+    - Name: MouseClickEventHandler1
+      Id: g=5457d75df54032d1cb2faa3dd2182e5e
+      Type: EventHandler
+      Children:
+      - Name: ListenEventType
+        Id: g=5db217cb7bac74069db0d1f02e79d652
+        Type: PropertyType
+        DataType: NodeId
+        Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
+      - Name: MethodsToCall
+        Id: g=c08a009a72d466268e9a0706563196d2
+        Type: BaseObjectType
+        Children:
+        - Name: MethodContainer1
+          Id: g=704ff2098b1918b5f49d1b7d26d08ba6
+          Type: BaseObjectType
+          Children:
+          - Name: ns=2;ObjectPointer
+            Id: g=77b2bd16bc868a454d2891e2ea683d5d
+            Type: NodePointer
+            DataType: NodeId
+            Value: "/Objects/Corso_FTOptix_Giussano_18_03_2025/NetLogic/RuntimeNetLogic1"
+            Children:
+            - Name: Kind
+              Id: g=723254f739b3977fed3a14f18f6af67b
+              Type: PropertyType
+              DataType: NodeId
+              Value: "/Types/ObjectTypes/BaseObjectType"
+          - Name: ns=2;Method
+            Id: g=2b9538d3840d86ac3018c2621f999d6c
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "mioLog"
+          - Name: InputArguments
+            Id: g=77c8bc818f0cf10d07959b08c6c6624c
+            Type: BaseObjectType
+            Children:
+            - Name: testoLog
+              Id: g=5f68423767be4a736fbd6649add3ca3c
+              Type: BaseDataVariableType
+              DataType: String
+              Children:
+              - Name: DynamicLink
+                Id: g=6825acf17cc570c775459d41ace69142
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "../../../../../../TextBox1/Text"
+      - Name: EventArguments
+        Id: g=61b4f7fd238d89752e52e53190a87181
+        Type: MouseClickEvent
+        Children:
+        - Name: EventId
+          Id: g=e2572c68304914a755c2a69edadcf179
+          Type: PropertyType
+          DataType: ByteString
+        - Name: EventType
+          Id: g=4853b741d16d03e9b8c3c94a17fd0960
+          Type: PropertyType
+          DataType: NodeId
+        - Name: SourceNode
+          Id: g=ba9f18a904012b0bf79820b88a3f83cb
+          Type: PropertyType
+          DataType: NodeId
+        - Name: SourceName
+          Id: g=efb7ca4c1438780ee43f054cd3eade1e
+          Type: PropertyType
+          DataType: String
+        - Name: Time
+          Id: g=ca6cd3a67db11f452a5ae49d572f6902
+          Type: PropertyType
+          DataType: UtcTime
+        - Name: ReceiveTime
+          Id: g=b2e02287dd0bde823fe35319635901a0
+          Type: PropertyType
+          DataType: UtcTime
+        - Name: Message
+          Id: g=c1ff3363bf7ab598ed15f0759ce3e3bb
+          Type: PropertyType
+          DataType: LocalizedText
+        - Name: Severity
+          Id: g=6e3931baf348246c82de0a9d8b11a45e
+          Type: PropertyType
+          DataType: UInt16
+  - Name: TextBox1
+    Id: g=361a9bf5be479a4128afb371440f1481
+    Type: TextBox
+    Children:
+    - Name: Text
+      Id: g=93787f254c2dc3d3f1b9854d3b06e090
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+    - Name: Width
+      Id: g=a819210e17e84daa44b9565bc80ca087
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 299.0
+    - Name: LeftMargin
+      Id: g=2df41afbfa47ae6f709378288f2d971d
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 190.0
+    - Name: TopMargin
+      Id: g=28905b6f3ecde89f71cd8734beac3c0c
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 20.0
+- Name: Screen2
+  Id: g=f67e1be66feb5c4240476fbbee22e5ef
+  Supertype: Screen
+  ReferenceType: HasComponent
+  Children:
+  - Name: HorizontalLayout1
+    Id: g=cbc3c7f135ab59ac5393fd016e8fc096
+    Type: RowLayout
+    Children:
+    - Name: Width
+      Id: g=d724ea52716d7def64b7a0ce4b3b9b65
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 50.0
+    - Name: Height
+      Id: g=00e10cb5759f140e1d8fe23dc65a62ec
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 50.0
+    - Name: HorizontalAlignment
+      Id: g=bc3f57cfb44804379ce6cb4b5559c5ec
+      Type: BaseVariableType
+      DataType: HorizontalAlignment
+      ModellingRule: Optional
+      Value: 3
+    - Name: HorizontalGap
+      Id: g=57ae4f7b2db065bb21dfb340800eb55d
+      Type: BaseDataVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 20.0
+    - Name: RuntimeNetLogic2
+      Id: g=853ada33c67a9451a1bd85dab3e5563d
+      Type: NetLogic
+      Children:
+      - Name: Puntatore
+        Id: g=a4bc918d09d2b57b636d3149672e7b12
+        Type: BaseDataVariableType
+        DataType: NodeId
+        Children:
+        - Name: DynamicLink
+          Id: g=58292cbddb4c1bdf40a0c0d09dc48804
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../..@NodeId"
+          Children:
+          - Name: Mode
+            Id: g=5aad10df2fddae2652d2edec2da79b69
+            Type: BaseVariableType
+            DataType: DynamicLinkMode
+            ModellingRule: Optional
+            Value: 2
+    - Name: Wrap
+      Id: g=3b704d5631cb30f3defa5f269b7f7bdb
+      Type: BaseDataVariableType
+      DataType: Boolean
+      ModellingRule: Optional
+      Value: true
+    - Name: VerticalGap
+      Id: g=6e4cc72ea568f3d70f8de5f9262ff77d
+      Type: BaseDataVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 20.0
+- Name: Screen3
+  Id: g=7c3ca1f94c75fef34e1ed74f18096c2d
+  Supertype: Screen
+  ReferenceType: HasComponent
+  Children:
+  - Name: Rectangle1
+    Id: g=00f4bfa4ad8a5b308e7d7125a71970a1
+    Type: Rectangle
+    Children:
+    - Name: Width
+      Id: g=d33e88d4289ac0f15efc1fbe72cd208d
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 330.0
+    - Name: Height
+      Id: g=4d008acc63bc1b0794b60d40fd89126d
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 230.0
+    - Name: BorderThickness
+      Id: g=33b1fc545b45eb520d7881f31c66d9d8
+      Type: BaseDataVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 1.0
+    - Name: LeftMargin
+      Id: g=06138a0d4b96f1eab9323b9c29549385
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 100.0
+    - Name: TopMargin
+      Id: g=67e9b679a9b2b714a7ab515286d580e7
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 50.0
+    - Name: CambioColore
+      Id: g=1eb0a88024edbd3f29bdb028839d0eb7
+      Type: NetLogic
+  - Name: SpinBox1
+    Id: g=c70559cd14cb3a3e34b9ac62b88d8b20
+    Type: SpinBox
+    Children:
+    - Name: Value
+      Id: g=f945c13a0a7790e7ff6569826d841078
+      Type: BaseDataVariableType
+      DataType: Double
+      Children:
+      - Name: DynamicLink
+        Id: g=6a5e8b61cbee70e1ada36d18bd61392b
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "/Objects/Corso_FTOptix_Giussano_18_03_2025/Model/VarPLC"
+        Children:
+        - Name: Mode
+          Id: g=ec4f90f6e8d7ee3a6f667ffdf21cf25b
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          ModellingRule: Optional
+          Value: 2
+    - Name: Width
+      Id: g=40d9181c08bc98ea593d0c40affb3219
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 80.0
+    - Name: LeftMargin
+      Id: g=25fd7f630ce3eb6697f98deff2ecad84
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 20.0
+    - Name: TopMargin
+      Id: g=4c8351ccb68da75c75253815ef73b659
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 8.0
