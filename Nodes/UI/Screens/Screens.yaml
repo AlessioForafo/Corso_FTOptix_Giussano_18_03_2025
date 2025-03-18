@@ -150,6 +150,46 @@ Children:
       DataType: Size
       ModellingRule: Optional
       Value: 20.0
+  - Name: Button2
+    Id: g=1dc953a0f6b2077233831fd678c3c970
+    Type: Button
+    Children:
+    - Name: Text
+      Id: g=ce3f9be5b103aa20139d9f111d26be80
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      ModellingRule: Optional
+      Value: {"LocaleId":"en-US","Text":"Button2"}
+    - Name: LeftMargin
+      Id: g=4f9c72755b18c505bd0337087910b428
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 26.0
+    - Name: TopMargin
+      Id: g=ea8e88ab078cc7f2a819a721b1ee7831
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 155.0
+    - Name: Width
+      Id: g=1bf17ba5c52bfc9b5c37937710a79f82
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 144.0
+    - Name: Height
+      Id: g=952c27c9fa07a5f181e5d75a07bc2506
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 75.0
+    - Name: BackgroundColor
+      Id: g=8b80bcb996e46c506ef0bb1cbf10f25f
+      Type: BaseDataVariableType
+      DataType: Color
+      ModellingRule: Optional
+      Value: "#f8e71c"
 - Name: Screen2
   Id: g=f67e1be66feb5c4240476fbbee22e5ef
   Supertype: Screen
